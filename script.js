@@ -157,10 +157,20 @@ Complete the exercise in the space below:
 */
 
 const basicCalculator = (num1, num2, operation) => {
-	if (operation === "add") return num1 + num2;
-	if (operation === "subtract") return num1 - num2;
-	if (operation === "multiply") return num1 * num2;
-	if (operation === "divide") return num1 / num2;
+	switch (operation) {
+		case "add":
+			return num1 + num2;
+			break;
+		case "subtract":
+			return num1 - num2;
+			break;
+		case "multiply":
+			return num1 * num2;
+			break;
+		case "divide":
+			return num1 / num2;
+			break;
+	}
 }
 
 // console.log('Exercise 9 Result:', basicCalculator(10, 5, "subtract"));
@@ -233,4 +243,4 @@ Complete the exercise in the space below:
 
 const numArgs = (...args) => { return args.length; }
 
-console.log('Exercise 12 Result:', numArgs(1, 2, 3, 4));
+// console.log('Exercise 12 Result:', numArgs(1, 2, 3, 4));
